@@ -126,7 +126,7 @@ def resolve_crs(preset_name: str, epsg_text: str) -> str:
     return "EPSG:4326"
 
 # ---------- Tk GUI ----------
-class App(tk.Tk):
+class ConverterApp(tk.Tk):
     def __init__(self):
         super().__init__()
         self.title("坐标批量转换器By Arope_V1")
@@ -267,4 +267,5 @@ class App(tk.Tk):
             messagebox.showerror("错误", str(e))
 
 if __name__ == "__main__":
-    App().mainloop()
+    ConverterApp().mainloop()
+
